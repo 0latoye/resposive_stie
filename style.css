@@ -16,9 +16,8 @@ body{
 
 
 .cars{
-    margin-top: 10%;
+    margin-top: 30px;
     background-color: white;
-    height: 400px;
     display: flex;
    
     
@@ -27,7 +26,7 @@ body{
 .sedan{
     background-color: hsl(31, 77%, 52%);
     height: 100%;
-    width: 200px;
+    width: 250px;
     padding: 20px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -37,7 +36,7 @@ body{
 .suv{
     background-color: hsl(184, 100%, 22%);
     height: 100%;
-    width: 200px;
+    width: 250px;
     padding: 20px;
 }
 
@@ -45,7 +44,7 @@ body{
 .lux{
     background-color: hsl(179, 100%, 13%);
     height: 100%;
-    width: 200px;
+    width: 250px;
     padding: 20px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -110,26 +109,49 @@ p{
 }
 
 
+@media (max-with: 768px) {
+    
+    .cars{
+        padding: 20px;
+    }
+}
 
-
-@media (max-width: 425px){
+@media (max-width: 500px){
+    body{
+        margin-top: 0px;
+       
+    }
 
     .cars{
+        margin-top: 0;
         flex-wrap: nowrap;
         flex-direction: column;
+        height: auto;
+        padding: 10px;
+        background-color: black;
         
     }
+    .align_cenr{
+        border-radius: 0;
+        width: 100%
+    }
+
     .sedan{
-        border-radius: 0%;
+        
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
+       
     }
     .suv{
-        border-radius: 0%;
+       
     }
+
     .lux{
-        border-radius: 0%;
+        
         border-bottom-left-radius:10px;
         border-bottom-right-radius:10px;
+        
     }
+
+    
 }
